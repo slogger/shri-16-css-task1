@@ -1,0 +1,264 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 24px;
+    min-width: 320px;
+}
+
+.show--x
+{
+    display: none;
+}
+
+.section__start
+{
+    width: 100%;
+    height: 80vh;
+    background: #eee;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    display: table;
+    position: relative;
+    background-attachment: fixed;
+    background-position-x: center;
+}
+
+.section__start a,
+.section__start a:visited
+{
+    color: white;
+    text-decoration: none;
+}
+
+.section__start a:hover,
+.section__start a:active
+{
+    text-decoration: : underline;
+}
+
+.section__title
+{
+    display: table-cell;
+    text-align: center;
+    height: 80vh;
+    width: 100%;
+    vertical-align: middle;
+    table-layout: fixed;
+}
+
+.section__title h1
+{
+    font-size: 1em;
+    line-height: 2em;
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 10px;
+}
+
+.section__title h2
+{
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 6px;
+}
+
+.section__subtitle h5
+{
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.section__subtitle
+{
+    display: table-row;
+    position: absolute;
+    transform: translate(-50%, -20%);
+    bottom: 0;
+    left: 50%;
+}
+
+.section__article
+{
+    font-size: initial;
+
+    max-width: 1000px;
+    margin: 8vh 0 10vh;
+}
+
+.section__article--addon blockquote
+{
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section__article--addon blockquote:before
+{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: #eee;
+    margin: 0 1.5em 0 -1em;
+}
+
+.section__article img
+{
+    max-width: 100%;
+}
+
+.section__start--big
+{
+    height: 100vh;
+    background-attachment: local;
+}
+
+@media (max-width: 768px)
+{
+    .section__article--addon blockquote
+    {
+        margin: 0 10%;
+    }
+
+    .section__article--addon figure
+    {
+        margin: 0;
+    }
+
+    .section__article--addon figcaption
+    {
+        margin: 0 10%;
+        font-size: 0.8em;
+        line-height: 1.6em;
+    }
+
+    .section__article--content
+    {
+        margin: 0 10%;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .section__article--addon,
+    .section__article--content
+    {
+        margin: 0 auto 5vh;
+
+    }
+
+    .section__article--addon
+    {
+        max-width: 400px;
+    }
+
+    .section__article--content
+    {
+        max-width: 600px;
+    }
+
+    .section__title h1
+    {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 1080px)
+{
+    .show--m
+    {
+        display: none;
+    }
+
+    .show--x
+    {
+        display: block;
+    }
+
+    .section__article
+    {
+        padding: 8vh 40px 10vh;
+        margin: 0 auto;
+    }
+
+    .section__article--addon
+    {
+        float: right;
+    }
+
+    .section__article--content + .section__article--addon
+    {
+        clear: both;
+        transform: translateY(-100%);
+    }
+
+    .section__article--content
+    {
+        max-width: 600px;
+        float: left;
+    }
+
+    .section__title h1
+    {
+        line-height: 1em;
+    }
+}
+
+/* SECTION SETTINGS */
+
+[data-section-title^="start"] .section__start
+{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(article-images/first.jpeg);
+}
+[data-section-title^="start"] .section__title h1
+{
+    font-size: 3em;
+}
+[data-section-title^="route"] .section__start
+{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(article-images/jump.jpeg);
+}
+[data-section-title^="weather"] .section__start
+{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(article-images/weather.jpeg);
+}
+[data-section-title^="sea"] .section__start
+{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(article-images/sea.jpeg);
+}
+[data-section-title^="walking"] .section__start
+{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(article-images/walking.jpeg);
+}
+[data-section-title^="lake"] .section__start
+{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(article-images/lake.jpeg);
+}
+[data-section-title^="island"] .section__start
+{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(article-images/island.jpeg);
+}
+[data-section-title^="saksun"] .section__start
+{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(article-images/saksun.jpeg);
+}
+[data-section-title^="people"] .section__start
+{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(article-images/people.jpeg);
+}
+[data-section-title^="team"] .section__start
+{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(article-images/team.jpeg);
+}
+
+[data-section-title^="start"] .section__article--content>p:first-of-type:first-letter
+{
+    font-size: 3em;
+    line-height: 1rem;
+}
